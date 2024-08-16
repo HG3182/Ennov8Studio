@@ -1,0 +1,214 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+ 
+  
+}
+
+
+
+.media ul {
+    
+    position: fixed;
+    right: 20px;
+    top: 63%;
+    padding: 10px 10px;
+}
+
+.media ul li {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 24px 0;
+    transition: .3s;
+}
+
+.media ul li:hover {
+    transform: scale(1.8);
+}
+
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .big-image {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    /* background: radial-gradient(transparent, black); */
+    /* background-image: url("../../../assets/images/pexels-pixabay-256381.jpg"); */
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .overlay h1 {
+    font-size: 65px;
+    letter-spacing: 0px;
+    margin: 0 0 5px;
+    font-size: 7rem;
+  }
+  
+  .overlay p {
+    margin: 0;
+    
+    font-size: 25px;
+  }
+ 
+  @media (min-width: 1px) and (max-width: 1023px) {
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.65);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .overlay h1 {
+      letter-spacing: 0px;
+      margin: 0 0 5px;
+      font-size: 5rem;
+    }
+  
+    .overlay p {
+      padding: 2px;
+      font-size: 15px;
+      max-width: 80%; /* Adjust this value based on your design */
+      margin: 0 auto; /* Center the paragraph */
+    }
+  }
+
+
+  .typewriter {
+    display: inline-block;
+    opacity: 0;
+    animation: typing 0.5s steps(10, end) forwards, blink 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  /* Ensures each word fades in one after the other */
+  .typewriter:nth-child(1) { animation-delay: 0s; }
+  .typewriter:nth-child(2) { animation-delay: 4s; }
+  .typewriter:nth-child(3) { animation-delay: 8s; }
+  
+
+  .animated-shapes-bg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .wave-bg {
+    background-image: url('../../../assets/images/wave.svg');
+    background-size: contain; 
+    background-position: top center;
+    background-repeat: no-repeat; 
+    position: relative;
+  }
+  
+  
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(144, 137, 252, 0.5);
+    animation: moveShapes 12s linear infinite;
+  }
+  
+  .shape-1 {
+    width: 150px;
+    height: 150px;
+    top: -50px;
+    left: 20%;
+    background-color: rgba(255, 128, 181, 0.5);
+    animation-duration: 18s;
+    animation-delay: 0s;
+  }
+  
+  .shape-2 {
+    width: 200px;
+    height: 200px;
+    bottom: -70px;
+    right: 15%;
+    background-color: rgba(144, 137, 252, 0.5);
+    animation-duration: 22s;
+    animation-delay: 3s;
+  }
+  
+  .shape-3 {
+    width: 100px;
+    height: 100px;
+    top: 40%;
+    left: 70%;
+    background-color: rgba(144, 137, 252, 0.4);
+    animation-duration: 16s;
+    animation-delay: 5s;
+  }
+  
+  .shape-4 {
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    left: 10%;
+    background-color: rgba(255, 128, 181, 0.4);
+    animation-duration: 20s;
+    animation-delay: 7s;
+  }
+  
+  .shape-5 {
+    width: 180px;
+    height: 180px;
+    top: 10%;
+    right: 5%;
+    background-color: rgba(144, 137, 252, 0.6);
+    animation-duration: 24s;
+    animation-delay: 10s;
+  }
+  
+  @keyframes moveShapes {
+    0% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-150px) translateX(100px) rotate(180deg);
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(360deg);
+    }
+  }
+  

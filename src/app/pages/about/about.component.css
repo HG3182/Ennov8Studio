@@ -1,0 +1,173 @@
+/* Container styling */
+.about-section {
+  padding: 200px 20px; /* Adjust padding */
+  height: 80vh;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column; /* Stack sections vertically on small screens */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Space between sections */
+  align-items: center;
+}
+
+.about-left, .about-right {
+  width: 100%;
+}
+
+.about-left h1 {
+  font-size: 3rem;
+  color: #f2f2f2;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sec-title h2 {
+  font-size: 2.5rem;
+  color: #f2f2f2;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #f2f2f2;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .about-left, .about-right {
+    width: 100%;
+  }
+
+  .about-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .sec-title h2 {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+
+/* Services List */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Space between items */
+  justify-content: center; /* Center items */
+  padding: 20px;
+  list-style: none;
+}
+
+.services-list strong {
+  font-size: 1.2rem;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  flex-grow: 1; /* Allow items to grow if space allows */
+}
+
+/* Quote Section */
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px; /* Add padding for spacing */
+  background-color: #f9fafb; /* Light background for contrast */
+  text-align: center;
+}
+
+.quote-section {
+  margin-bottom: 20px; /* Space below quote section */
+}
+
+.quote {
+  font-family: 'Roboto', sans-serif; /* Or another bold and modern font */
+  font-weight: 700; /* Bold text */
+  font-size: 1.2rem; /* Adjust the size as needed */
+  color: #333; /* Dark color for better contrast */
+  line-height: 1.5; /* Improve readability */
+}
+
+.image-section {
+  width: 100%;
+  max-width: 600px; /* Set max-width for larger screens */
+}
+
+.image-section img {
+  width: 100%; /* Ensure the image scales well */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Slightly round the corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .about-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .sec-title h2 {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .services-list {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+  }
+
+  .services-list strong {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .quote-container {
+    padding: 30px 10px; /* Adjust padding for small screens */
+  }
+
+  .quote {
+    font-size: 1rem; /* Adjust font size for readability on small screens */
+  }
+}

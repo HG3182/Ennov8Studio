@@ -1,0 +1,13 @@
+.navb {
+    /* Set the navbar background color to transparent */
+   position:absolute;
+   width: 100%;
+   z-index: 20; /* Set a higher z-index to overlay the hero banner */
+}
+
+@media (min-width: 1023px) and (max-width: 1300px) {
+   .lg\:flex.lg\:space-x-4 > * {
+       margin-right: 0 !important;
+       --tw-space-x-reverse: 1;
+   }
+}
