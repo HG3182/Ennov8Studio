@@ -1,9 +1,12 @@
 .navb {
-    /* Set the navbar background color to transparent */
-   position:absolute;
-   width: 100%;
-   z-index: 20; /* Set a higher z-index to overlay the hero banner */
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Applies a blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
 
 @media (min-width: 1023px) and (max-width: 1300px) {
    .lg\:flex.lg\:space-x-4 > * {
