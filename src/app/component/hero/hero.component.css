@@ -143,7 +143,7 @@ body {
   }
   
   
-  .shape {
+  /* .shape {
     position: absolute;
     border-radius: 50%;
     background: rgba(144, 137, 252, 0.5);
@@ -209,6 +209,65 @@ body {
     }
     100% {
       transform: translateY(0) translateX(0) rotate(360deg);
+    }
+  } */
+  .text-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content-container {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  @media (max-width: 640px) {
+    .text-center {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .content-container {
+      text-align: center;
+      padding: 0 5px;
+    }
+  
+    .content-container h1 {
+      font-size: 2.5rem;
+    }
+    
+    .content-container p {
+      font-size: 1rem;
+    }
+    
+    .hero-image {
+      max-width: 100%;
+    }
+
+    .wave-bg {
+      background-image: url('../../../assets/images/wave.svg');
+      background-size:cover;
+      background-position: top center;
+      background-repeat: no-repeat; 
+      position: relative;
     }
   }
   
